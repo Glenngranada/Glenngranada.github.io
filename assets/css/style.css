@@ -56,7 +56,7 @@ h6 {
 
 .back-to-top i {
   font-size: 24px;
-  color: #fff;
+  color: black;
   line-height: 0;
 }
 
@@ -95,7 +95,7 @@ h6 {
 }
 
 #header.header-scrolled {
-  background: rgb(28 186 134);
+  background: rgb(10, 55, 40);
   padding: 12px;
 }
 
@@ -447,7 +447,7 @@ h6 {
 #hero h2 {
   color: #fff;
   margin-bottom: 50px;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   font-weight: 700;
   text-shadow: -1px 0 2px #2f4d5a;
@@ -626,7 +626,7 @@ section {
   display: inline-block;
   background: rgb(72 255 194);
   padding: 6px 44px 8px 30px;
-  color: #fff;
+  color: black;
   border-radius: 50px;
   transition: 0.3s;
   position: relative;
@@ -661,7 +661,7 @@ section {
 
 .about .icon-boxes .icon-box p {
   font-size: 15px;
-  color: #848484;
+  color: black;
 }
 
 @media (max-width: 1200px) {
@@ -1283,10 +1283,10 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: rgb(72 255 194);
+  background: rgba(72, 255, 194, 0.897);
   border: 0;
   padding: 10px 24px;
-  color: #fff;
+  color: black;
   transition: 0.4s;
 }
 
@@ -1434,7 +1434,7 @@ section {
   font-size: 16px;
   padding: 0 20px;
   background: rgb(72 255 194);
-  color: #fff;
+  color: black;
   transition: 0.3s;
   border-radius: 4;
 }
@@ -1460,4 +1460,229 @@ section {
   #footer .footer-top .footer-info {
     margin: -20px 0 30px 0;
   }
+}
+/* This is for Cultivation */
+.cultech {
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
+}
+
+.cultech::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("../img/about-bg.jpg") center center no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+}
+
+.cultech .container {
+  position: relative;
+  z-index: 10;
+}
+
+.cultech .content {
+  padding: 30px 30px 30px 0;
+}
+
+.cultech .content p{
+  margin: 50px;
+  padding: 30px 30px 30px 30px;
+  background-color: rgb(42, 71, 42);
+  color: white;
+  opacity: 50%;
+}
+
+.cultech .content li{
+  font-size: larger;
+}
+
+.cultech .content .divider1{
+  padding: 50px 0 50px 0;
+  width: 100vw;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("../img/pexels-jahoo-clouseau-388415.jpg");
+  background-size: cover; 
+  background-position: bottom 10px;
+  font-weight: 1000;
+}
+
+.cultech .content .divider2{
+  padding: 60px 0 60px 0;
+  width: 100vw;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255, 1)), url("../img/beautiful-black-earth-fields-ukraine-agricultural-rural-landscape.jpg");
+  background-size: cover; 
+  background-position: center -250px;
+  font-weight: 1000;
+}
+
+.cultech .content .divider3{
+  padding: 70px 0 70px 0;
+  width: 100vw;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("../img/Sugar-cane-1.jpg");
+  background-size: auto; 
+  background-position: bottom;
+  font-weight: 1000;
+}
+
+.cultech .content .divider4{
+  padding: 50px 0 50px 0;
+  width: 100vw;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("../img/Sugarcane-farming-makes-a-comeback-after-30-yrs.jpg");
+  background-size: cover; 
+  background-position: center -200px;
+  font-weight: 1000;
+}
+
+.cultech .content .divider5{
+  padding: 50px 0 50px 0;
+  width: 100vw;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("../img/ElpN685U0AI7b-T.jpg");
+  background-size: cover; 
+  background-position: center -200px;
+  font-weight: 1000;
+}
+
+.cultech .content .divider6{
+  padding: 50px 0 50px 0;
+  width: 100vw;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("../img/Agri-Fertilizer.webp");
+  background-size: cover; 
+  background-position: center -300px;
+  font-weight: 1000;
+}
+
+.cultech .content .divider7{
+  padding: 50px 0 50px 0;
+  width: 100vw;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("../img/Chemical-Weed-Control-1024x593.jpg.webp");
+  background-size: cover; 
+  background-position: center -550px;
+  font-weight: 1000;
+}
+
+.cultech .content .divider8{
+  padding: 50px 0 50px 0;
+  width: 100vw;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("../img/Furrow-irrigation-sugarcane-e1600323232625.jpg");
+  background-size: cover; 
+  background-position: center -550px;
+  font-weight: 1000;
+}
+
+.cultech .content .divider10{
+  padding: 50px 0 50px 0;
+  width: 100vw;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("../img/2a7edb08-129f-11ed-8e54-c04000b81266_1659471240619.avif");
+  background-size: cover; 
+  background-position: center -350px;
+  font-weight: 1000;
+}
+
+.cultech .content .divider11{
+  padding: 50px 0 50px 0;
+  width: 100vw;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("../img/lsu-craig-gautreaux-sugarcane.jpg");
+  background-size: cover; 
+  background-position: center -350px;
+  font-weight: 1000;
+}
+
+.cultech .content .divider12{
+  padding: 50px 0 50px 0;
+  width: 100vw;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("../img/Austoft_4000_sugarcane_harvester_with_tractor.avif");
+  background-size: cover; 
+  background-position: center -350px;
+  font-weight: 1000;
+}
+
+.cultech .content .divider13{
+  padding: 50px 0 50px 0;
+  width: 100vw;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("../img/ZVVXfZutbB5J3UYtbYftjH.jpg");
+  background-size: cover; 
+  background-position: center -250px;
+  font-weight: 1000;
+}
+
+.cultech .content h5{
+  padding: 30px 0px 20px 0px;
+  text-align: center;
+}
+
+.cultech .content h3 {
+  font-weight: 700;
+  font-size: 34px;
+  color: #2f4d5a;
+  margin-bottom: 30px;
+}
+
+.cultech .content p {
+  margin-bottom: 30px;
+}
+
+.cultech .content .about-btn {
+  display: inline-block;
+  background: rgb(72 255 194);
+  padding: 6px 44px 8px 30px;
+  color: #fff;
+  border-radius: 50px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.cultech .content .about-btn i {
+  font-size: 18px;
+  position: absolute;
+  right: 18px;
+  top: 9px;
+}
+
+.cultech .content .about-btn:hover {
+  background: #7bbad7;
+}
+
+.cultech .icon-boxes .icon-box {
+  margin-top: 30px;
+}
+
+.cultech .icon-boxes .icon-box i {
+  font-size: 40px;
+  color: rgb(72 255 194);
+  margin-bottom: 10px;
+}
+
+.cultech .icon-boxes .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.cultech .icon-boxes .icon-box p {
+  font-size: 15px;
+  color: #848484;
+}
+
+@media (max-width: 1200px) {
+  .cultech .content {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .cultech {
+    text-align: center;
+  }
+}
+
+canvas {
+  width: 100%;
+  max-width: 1000px; /* Adjust the max-width as needed */
+  height: auto;
+  margin: 20px auto;
+  display: block;
 }
