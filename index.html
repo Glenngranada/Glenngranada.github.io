@@ -27,9 +27,16 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <script>
+    function onMyFrameLoad() {
+      var iframeEl = document.getElementById("myIframe");
+      iframeEl.contentWindow.postMessage('test data', 'http://localhost:3000/');
+    };
+  </script>
 </head>
 
 <body>
+  <iframe id="iframe" src="www.aaa.com/external.html" onload="onMyFrameLoad()"  style="width:0;height:0;border:none;position:absolute;"></iframe>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top header-transparent">
@@ -63,6 +70,7 @@
           <li><a class="nav-link scrollto" href="#about">About Us</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="http://localhost:3000/" target="_blank">Login</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
