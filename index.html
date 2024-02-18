@@ -30,30 +30,17 @@
 
   <script>
     function onMyFrameLoad() {
-        var iframeEl = document.getElementById("myIframe");
-        if (iframeEl.contentWindow) {
-            var chan = Channel.build({
-                window: iframeEl.contentWindow,
-                origin: "*",
-                scope: "testScope"
-            });
-            chan.call({
-                method: "reverse",
-                params: "hello world!",
-                success: function (products) {
-                    return new Promise((resolve, reject) => {
-                        console.log(products, 'from html site');
-                        GlennIndexDB.openIndexedDB().then(db => {
-                            products.forEach((product)=>{
-                              GlennIndexDB.addProduct(db, product);
-                            })
-                        })
-                        resolve(); // Resolve the promise once the logging is done
-                    });
-                }
-            });
-        }
+      function sendMessage() {
+        const iframe = document.querySelector("#myIframe");
+        iframe.contentWindow.postMessage('give me products', "*");
+      }
     }
+
+    window.addEventListener('message', function(event) {
+      console.log("Message received from the child: " + event.data); // Message received from child
+      let data = event.data ? event.data : null
+      localStorage.setItem("products", data);
+    });
   </script>
 </head>
 
